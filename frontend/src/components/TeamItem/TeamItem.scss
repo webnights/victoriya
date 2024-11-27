@@ -1,0 +1,26 @@
+@use '/src/assets/variables' as vars; 
+
+
+.schedule__row{
+   
+    border-top: 1px solid #000;
+    .main_col{
+        font-weight: 600;
+    }
+    td{
+        padding: 30px 30px ;
+        
+        text-align: left;
+        font-size: 16px;
+        div{
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+
+        }
+    }
+    
+}
+  
+
+

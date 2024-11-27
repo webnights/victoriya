@@ -1,0 +1,24 @@
+
+@use 'reset';
+@use 'general';
+@use '../components/Header/Header';
+@use '../components/Footer/Footer';
+@use '../components/Button/Button.scss';
+@use '../components/Hero/Hero.scss';
+@use '../components/Advantages/Advantages.scss';
+@use '../components/AdvantageCard/AdvantageCard.scss';
+@use '../views/Products/Products.scss';
+@use '../components/Product/Product.scss';
+@use '../components/ContactItem/ContactItem.scss';
+@use '../components/TeamItem/TeamItem.scss';
+@use '../components/Cart/Cart.scss';
+@use '../components/Carousel/Carousel.scss';
+@use '../components/CarouselItem/CarouselItem.scss';
+@use '../views/ProductPage/ProductPage.scss';
+@use '../views/Contacts/Contacts.scss';
+@use '../views/Registration/Registration.scss';
+@use '../views/Authorization/Authorization.scss';
+@use '../views/Team/Team.scss';
+@use '../views/Comment/Comment.scss';
+
+

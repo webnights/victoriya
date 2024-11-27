@@ -1,0 +1,31 @@
+@use '../../assets/variables' as vars;
+.hero {
+    padding: 50px 0 50px 0;
+   
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: cenetr;
+  
+    
+    
+}
+.hero__content {
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 20px;
+    p{
+        font-size: 18px;
+    }
+    
+}
+.hero__image {
+    img{
+        max-width: 500px;
+    }
+}

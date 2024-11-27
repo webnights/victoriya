@@ -1,0 +1,12 @@
+@use '/src/assets/variables' as vars;
+
+footer{
+    padding: 20px;
+    background: vars.$pink;
+    text-align: center;
+    font-size: 14px;
+    span{
+        display: block;
+        margin-bottom: 10px;
+    }
+}

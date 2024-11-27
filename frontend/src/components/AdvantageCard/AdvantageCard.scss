@@ -1,0 +1,21 @@
+@use '../../assets/variables' as vars;
+
+.advantage__card{
+    padding: 30px;
+    text-align: center;
+    flex-basis: 25%;
+    background: vars.$pink;
+    img{
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+    h5{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    p{
+        opacity: 80%;
+
+    }
+}

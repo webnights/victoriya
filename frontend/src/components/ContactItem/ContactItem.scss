@@ -1,0 +1,18 @@
+@use '/src/assets/variables' as vars;
+.contact__item{
+    margin: 0 auto;
+    img{
+        max-width: 30px;
+    }
+    a{
+        font-size: 18px;
+        transition: all .3s;
+
+        &:hover{
+            color: vars.$red;
+        }
+    }
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

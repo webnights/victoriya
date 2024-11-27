@@ -1,0 +1,16 @@
+@use '../../assets/variables' as vars;
+
+button{
+    background: vars.$red;
+    padding: 15px 20px;
+    color: vars.$white;
+    transition: all .4s;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    &:hover{
+        transform: translateY();
+    }
+}
