@@ -121,7 +121,7 @@
       document.removeEventListener("click", this.handleOutsideClick);
     },
     methods: {
-      ...mapMutations(["unAuthorize", "setCart"]),
+      ...mapMutations(["unAuthorize", "setCart", "setCartSize"]),
       searchProducts() {
         this.searchProductsList = this.products.filter((product) => {
           return (
@@ -176,10 +176,25 @@
       async getProducts() {
         const response = await axios.get("http://localhost:3000/products");
         this.products = response.data;
+        this.getCart();
+      },
+      async getCart() {
+        const userId = this.USERID;
+        const response = await axios.get(`http://localhost:3000/cart/${userId}`);
+        this.setCart(response.data);
+        this.updateTotalQuantity();
+        this.updateCartCost();
+      },
+      updateTotalQuantity() {
+        const total = this.CART.reduce(
+          (sum, item) => sum + item.product_quantity,
+          0
+        );
+        this.setCartSize(total); // Обновляем общее количество товаров в Vuex
       },
     },
     computed: {
-      ...mapGetters(["ISAUTHORIZED", "USERNAME", "USERID", "CARTSIZE"]),
+      ...mapGetters(["ISAUTHORIZED", "USERNAME", "USERID", "CARTSIZE", "CART"]),
     },
   };
   </script>
