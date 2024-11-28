@@ -182,15 +182,6 @@
         const userId = this.USERID;
         const response = await axios.get(`http://localhost:3000/cart/${userId}`);
         this.setCart(response.data);
-        this.updateTotalQuantity();
-        this.updateCartCost();
-      },
-      updateTotalQuantity() {
-        const total = this.CART.reduce(
-          (sum, item) => sum + item.product_quantity,
-          0
-        );
-        this.setCartSize(total); // Обновляем общее количество товаров в Vuex
       },
     },
     computed: {
